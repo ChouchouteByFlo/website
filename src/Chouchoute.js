@@ -307,7 +307,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-4'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10749.887751408041!2d-2.738819!3d47.6558276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b66e6986c6242f4!2sChouchoute%20by%20Flo!5e0!3m2!1sfr!2sfr!4v1577022978684!5m2!1sfr!2sfr"></iframe>
+            <iframe src="https://snazzymaps.com/embed/207889"></iframe>
           </div>
 
           <div className='col-sm-8'>

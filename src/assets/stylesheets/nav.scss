@@ -1,34 +1,5 @@
 @import "constants.scss";
 
-// nav {
-//   margin-bottom: 20px;
-//   ul {
-//     text-align: center;
-
-//     li {
-//       display: inline-block;
-//       vertical-align: top;
-//       text-decoration: none;
-      
-//       a {
-//         padding: 5px 8px;
-//         color: $colorMain;
-//         font-family: 'champagneregular';
-//         font-size: 1em;
-//         text-transform: uppercase;
-
-//         &:hover {
-//           background-image: linear-gradient(153deg, $colorSecond 0%, $colorMain 75%);
-//           color: #FFF;
-//           border-radius: 5px;
-//           text-decoration: none;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 nav {
   margin-bottom: 20px;
   ul {
@@ -47,7 +18,7 @@ nav {
         text-transform: uppercase;
 
         &:hover {
-          background-image: linear-gradient(153deg, $colorPink 0%, $colorPink 75%);
+          background-image: linear-gradient(153deg, $colorSecond 0%, $colorMain 75%);
           color: #FFF;
           border-radius: 5px;
           text-decoration: none;
@@ -56,3 +27,5 @@ nav {
     }
   }
 }
+
+
