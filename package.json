@@ -1,0 +1,43 @@
+{
+  "name": "chouchoute",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "webpack": "webpack-dev-server"
+  },
+  "author": "Nicolas LE CHENIC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.2.0",
+    "img-loader": "^3.0.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.9.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-slick": "^0.25.2",
+    "sass-loader": "^8.0.0",
+    "scroll-into-view-if-needed": "^2.2.20",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^1.0.0",
+    "toastr": "^2.1.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}

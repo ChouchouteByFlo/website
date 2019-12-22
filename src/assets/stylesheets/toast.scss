@@ -1,0 +1,11 @@
+@import "constants.scss";
+
+.toast {
+  &-success {
+    background-color: $colorSuccessDark;
+  }
+
+  &-error {
+    background-color: $colorFailureDark;
+  }
+}

@@ -1,0 +1,28 @@
+@import "constants.scss";
+
+.part {
+  padding: 20px;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-dark {
+    padding-top: 10px;
+    background-color: $colorYellow;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: calc(100% + 76px);
+      margin-left: -38px;
+      padding-bottom: 2.77%;
+      background-image: url('../images/rect.svg');
+      background-size: cover;
+      margin-top: 4vh;
+      z-index: 100;
+      margin-bottom: -.1875rem;
+    }
+  }
+}
