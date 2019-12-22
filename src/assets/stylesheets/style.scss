@@ -5,6 +5,133 @@
 @import "toast.scss";  
 @import "form.scss";
 
+// header {
+//   width: 100%;
+// }
+
+// .title {
+//   font-size: 2.5em;
+//   font-family: 'champagnebold';
+
+//   &-champagne {
+//     display: inline-block;
+//     font-family: 'champagneregular';
+//     color: $colorDark;
+//     text-transform: uppercase;
+//     font-size: 1.8em;
+//     padding: 10px;
+//   }
+
+//   &-sub {
+//     font-size: 1.2em;
+//   }
+
+//   &-main {
+//     color: $colorMain;
+//   }
+
+//   &-second {
+//     color: $colorSecond;
+//   }
+
+//   &-dark {
+//     color: $colorDark;
+//   }
+
+//   &-light {
+//     color: #FFF;
+//   }
+
+//   &-deco {
+//     width: 40%;
+//     margin-left: 30%;
+//     height: 5px;
+//     border-radius: 5px;
+//     margin-top: 10px;
+//     background-image: linear-gradient(153deg, $colorMain 50%, $colorGradientLight 95%);
+//   }
+// }
+
+// .text {
+//   font-size: .9em;
+//   font-family: 'loraregular';
+  
+//   &-main {
+//     color: $colorMain;
+//   }
+
+//   &-second {
+//     color: $colorSecond;
+//   }
+
+//   &-dark {
+//     color: $colorSemiDark;
+//   }
+
+//   &-semi-dark {
+//     color: $colorPurpleDark;
+//   }
+
+//   &-light {
+//     color: $colorSemiLight;
+//   }
+
+//   &-small {
+//     font-size: 1em;
+//     font-family: 'champagneregular';
+//   }
+// }
+
+// .button {
+//   font-family: 'cabinregular';
+
+//   &-normal {
+//     border: 2px solid $colorMain;
+//     background-color: #FFF;
+//     color: $colorMain;
+//     border-radius: 5px;
+
+//     &:hover {
+//       background-image: linear-gradient(153deg, $colorGradientDark 0%, $colorMain 75%);
+//       color: #FFF;
+//       border: none;
+//       padding: 2px 10px;
+//     }
+//   }
+// }
+
+// .massage {
+//   &-item {
+//     padding: 30px;
+//   }
+// }
+
+// .img {
+//   &-logo {
+//     display: block;
+//     margin: 0 auto;
+//     width: 160px;
+//     height: 160px;
+//   }
+
+//   &-by-flo {
+//     width: 80%;
+//     border-radius: 100%;
+//   }
+
+//   &-line {
+//     margin-bottom: 30px;
+
+//     &-item {
+//       height: 200px;
+//       width: auto !important;
+//       max-width: 100% !important;
+//       display: inline-block;
+//       vertical-align: top;
+//     }
+//   }
+// }
+
 header {
   width: 100%;
 }
@@ -92,7 +219,7 @@ header {
     border-radius: 5px;
 
     &:hover {
-      background-image: linear-gradient(153deg, $colorGradientDark 0%, $colorMain 75%);
+      background-image: linear-gradient(153deg, $colorPink 0%, $colorYellow 75%);
       color: #FFF;
       border: none;
       padding: 2px 10px;
