@@ -20,7 +20,7 @@ import img7 from './assets/images/sample-7.jpg';
 import img8 from './assets/images/sample-8.jpg';
 import img9 from './assets/images/sample-9.jpg';
 import img10 from './assets/images/sample-10.jpg';
-import offer from './assets/images/offer-old.jpg';
+import offer from './assets/images/offer.jpg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/stylesheets/fonts.scss';
@@ -185,11 +185,11 @@ class Chouchoute extends Component {
         <div className='img-line'>
           <Slider {...settings}>
             <img className='img-line-item' src={img1} />
-            <img className='img-line-item' src={img8} />
             <img className='img-line-item' src={img2} />
             <img className='img-line-item' src={img3} />
-            <img className='img-line-item' src={img9} />
-            <img className='img-line-item' src={img10} />
+            <img className='img-line-item' src={img4} />
+            <img className='img-line-item' src={img5} />
+            <img className='img-line-item' src={img6} />
           </Slider>
         </div>
 
@@ -288,7 +288,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-5'>
-          <img className='img-full' src={offer} />
+            <img className='img-full img-rounded' src={offer} />
           </div>  
           <div className='col-sm-7'>
 
