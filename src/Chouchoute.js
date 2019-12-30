@@ -17,10 +17,9 @@ import img4 from './assets/images/sample-4.jpg';
 import img5 from './assets/images/sample-5.jpg';
 import img6 from './assets/images/sample-6.jpg';
 import offer from './assets/images/offer.jpg';
+import './assets/stylesheets/style.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'assets/stylesheets/fonts.scss';
-import 'assets/stylesheets/style.scss';
 import '../node_modules/slick-carousel/slick/slick.css'; 
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 

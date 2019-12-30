@@ -50,7 +50,7 @@ let config = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/'
+              outputPath: './dist/fonts/'
             }
           }
         ]
@@ -62,14 +62,14 @@ let config = {
             loader: 'url-loader',
             options: { 
               limit: 8192, 
-              outputPath: 'images/'
+              outputPath: './dist/images/'
             }
           },
           {
             loader: 'img-loader',
             options: { 
               enabled: false,
-              outputPath: 'images/'
+              outputPath: './dist/images/'
             }
           }
         ]
