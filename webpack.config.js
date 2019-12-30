@@ -1,5 +1,6 @@
 const path = require('path')
 const extractTextPlugin = require("extract-text-webpack-plugin");
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 const mode = process.env.NODE_ENV;
 
 const cssLoaders = 
@@ -15,7 +16,7 @@ const cssLoaders =
 let config = {
   entry: './src/Chouchoute.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.min.js',
     path: path.resolve(__dirname, 'dist')
   },
   mode: mode,
@@ -44,18 +45,32 @@ let config = {
       },
       {
         test: /\.(woff2?|eot|ttf|otf|wav)(\?.*)?$/,
-        loader: 'file-loader'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
       },
       {
         test: /\.(png|svg|jpe?g|gif)(\?.*)?$/,
         use: [
           {
             loader: 'url-loader',
-            options: { limit: 8192 }
+            options: { 
+              limit: 8192, 
+              outputPath: 'images/'
+            }
           },
           {
             loader: 'img-loader',
-            options: { enabled: false }
+            options: { 
+              enabled: false,
+              outputPath: 'images/'
+            }
           }
         ]
       }
@@ -65,7 +80,8 @@ let config = {
     new extractTextPlugin({
       filename: 'application.min.css',
       disable: true
-    })
+    }),
+    new MinifyPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx'],

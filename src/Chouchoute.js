@@ -16,10 +16,6 @@ import img3 from './assets/images/sample-3.jpg';
 import img4 from './assets/images/sample-4.jpg';
 import img5 from './assets/images/sample-5.jpg';
 import img6 from './assets/images/sample-6.jpg';
-import img7 from './assets/images/sample-7.jpg';
-import img8 from './assets/images/sample-8.jpg';
-import img9 from './assets/images/sample-9.jpg';
-import img10 from './assets/images/sample-10.jpg';
 import offer from './assets/images/offer.jpg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
