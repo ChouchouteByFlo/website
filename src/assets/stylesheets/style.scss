@@ -241,6 +241,14 @@ header {
     height: 160px;
   }
 
+  &-full {
+    width: 100%;
+  }
+
+  &-rounded {
+    border-radius: 10px;
+  }
+
   &-by-flo {
     width: 80%;
     border-radius: 100%;
@@ -257,4 +265,11 @@ header {
       vertical-align: top;
     }
   }
+}
+
+iframe {
+  width: 100%;
+  min-height: 250px;
+  border: none;
+  margin-top: 10px;
 }
