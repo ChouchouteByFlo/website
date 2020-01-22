@@ -55,7 +55,7 @@ header {
 
 .text {
   font-size: .9em;
-  font-family: 'loraregular';
+  font-family: 'Montserrat', 'Nunito Sans', sans-serif;
   
   &-main {
     color: $colorMain;
@@ -66,12 +66,17 @@ header {
   }
 
   &-dark {
-    color: $colorSemiDark;
+    color: $colorDark;
   }
 
   &-semi-dark {
-    color: $colorPurpleDark;
+    color: $colorSemiDark;
   }
+
+  &-middle {
+    color: $colorMiddle;
+  }
+
 
   &-light {
     color: $colorSemiLight;

@@ -1,11 +1,12 @@
 @import "constants.scss";
 
 .toast {
+  border-radius: 5px !important;
   &-success {
-    background-color: $colorSuccessDark;
+    background-color: $colorSuccessDark !important;
   }
 
   &-error {
-    background-color: $colorFailureDark;
+    background-color: $colorFailureDark !important;
   }
 }

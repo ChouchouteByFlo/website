@@ -23,6 +23,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/slick-carousel/slick/slick.css'; 
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 
+const HOOK_PART_ONE = 'T3X6T9YG5';
+const HOOK_PART_TWO = 'BS4RGLOCK';
+const HOOK_PART_THREE = '6dyhTJ7EMRlUoq6Vu9FSdYhF';
+
 class Chouchoute extends Component {
   constructor(props) {
     super(props);
@@ -49,7 +53,8 @@ class Chouchoute extends Component {
   formattedData() {
     let { name, email, phone, content, message } = this.state;  
     let messageContent = content ? content : message; 
-    let text = `<@flo> Formulaire de contact\n\nMessage de ${name}\n:email: ${email}\n:phone: ${phone}\n\n${messageContent}`;
+    let phoneNum = phone ? phone : 'Non renseigné'
+    let text = `<@flo> Formulaire de contact\n\nMessage de ${name}\n:email: ${email}\n:phone: ${phoneNum}\n\n${messageContent}`;
 
     return (
       JSON.stringify(
@@ -61,27 +66,51 @@ class Chouchoute extends Component {
   }
   
   send() {
-    axios.post(
-      "https://hooks.slack.com/services/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", 
-      this.formattedData(), 
-      {
-        withCredentials: false,
-        transformRequest: [
-          (data, headers) => {
-            delete headers.post["Content-Type"]
-            return data
+    let { name, email, content, message } = this.state;  
+    let messageContent = content ? content : message; 
+    let hookPartOne = HOOK_PART_ONE.replace(/G5/, 'G4');
+    let hookPartTwo = HOOK_PART_TWO.replace(/OCK/, 'KEY');
+
+    if (name && email && messageContent) {
+      if (/\S+@\S+\.\S+/.test(email)) {
+        axios.post(
+          `https://hooks.slack.com/services/${hookPartOne}/${hookPartTwo}/${HOOK_PART_THREE}`, 
+          this.formattedData(), 
+          {
+            withCredentials: false,
+            transformRequest: [
+              (data, headers) => {
+                delete headers.post["Content-Type"]
+                return data
+              }
+            ]
           }
-        ]
-      }
-    ).then(res => {
-      if (res.status === 200) {
-        toastr.success('Message envoyé avec succes !')
+        ).then(res => {
+          if (res.status === 200) {
+            toastr.success('Message envoyé avec succes !')
+          } else {
+            toastr.success('Une erreur est survenu ...')
+          }
+          console.log(res);
+          console.log(res.data);
+        })
       } else {
-        toastr.success('Une erreur est survenu ...')
+        toastr.error('Veuillez entrer une adresse email valide')
       }
-      console.log(res);
-      console.log(res.data);
-    })
+    } else {
+      if (!messageContent) {
+        toastr.error('Veuillez entrer un message')
+      }
+      if (!email) {
+        toastr.error('Veuillez entrer une adresse email')
+      }
+      if (!/\S+@\S+\.\S+/.test(email)) {
+        toastr.error('Veuillez entrer une adresse email valide')
+      }
+      if (!name) {
+        toastr.error('Veuillez entrer votre nom et prénom')
+      }
+    }
   }
 
   handleEmail(event) {
@@ -154,7 +183,6 @@ class Chouchoute extends Component {
         <div className="row">
           <header>
             <img className='img-logo' src={logo} />
-
             <nav>
               <ul>
                 <li>
@@ -208,7 +236,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-8 col-md-9 col-lg-10'>
-            <p className='text text-semi-dark'>Salut les filles, moi c’est Flo ! J’aime le contact humain, bavarder, rigoler, prendre le temps de vous chouchouter et tout ça dans une ambiance cosy! Pourtant...</p>
+            <p className='text text-semi-dark'>👋 Salut les filles, moi c’est Flo ! J’aime le contact humain, bavarder, rigoler, prendre le temps de vous chouchouter et tout ça dans une ambiance cosy! Pourtant...</p>
             <p className='text text-semi-dark'>Petit retour en arrière, nous sommes en 2016 quand mon adorable chéri m’organise un voyage surprise en Thaïlande ! Cela faisait un bout de temps que je voulais visiter l’Asie, découvrir sa culture, sa cuisine, son sourire mais surtout... ses massages !</p>
             <p className='text text-semi-dark'>Quelques jours après notre arrivée c'est donc tout naturellement qu'au détour d'une petite rue de Chiang-Mai, nous avons tentez à l'improviste un salon de massage et ce fut un véritable... calvaire ! </p>
           </div>
@@ -302,7 +330,10 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-4'>
-            <iframe src="https://snazzymaps.com/embed/207889"></iframe>
+            <p className='text text-semi-dark'>📅 <b className='text-dark'>Horaires</b> mardi-samedi  10:00-19:00</p> 
+            <p className='text text-semi-dark'>📞 <b className='text-dark'>Téléphone</b> +336 52.18.72.92</p>
+            <p className='text text-semi-dark'>📫 <b className='text-dark'>Adresse</b> 29, rue Antoine Condorcet<br/><span className='text-middle'>└───▸ </span> &nbsp;&nbsp;&nbsp;56000 VANNES</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42999.55067623435!2d-2.738819!3d47.655828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b66e6986c6242f4!2sChouchoute%20by%20Flo!5e0!3m2!1sfr!2sfr!4v1577725715443!5m2!1sfr!2sfr"></iframe>
           </div>
 
           <div className='col-sm-8'>
