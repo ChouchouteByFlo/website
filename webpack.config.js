@@ -17,7 +17,7 @@ let config = {
   entry: './src/Chouchoute.js',
   output: {
     filename: 'bundle.min.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '')
   },
   mode: mode,
   module: {
@@ -50,7 +50,7 @@ let config = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'dist/fonts/'
+              outputPath: './dist/fonts/'
             }
           }
         ]
@@ -62,14 +62,14 @@ let config = {
             loader: 'url-loader',
             options: { 
               limit: 8192, 
-              outputPath: 'dist/images/'
+              outputPath: './dist/images/'
             }
           },
           {
             loader: 'img-loader',
             options: { 
               enabled: false,
-              outputPath: 'images/'
+              outputPath: './dist/images/'
             }
           }
         ]
