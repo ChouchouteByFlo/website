@@ -156,7 +156,7 @@ class Chouchoute extends Component {
     const node = document.getElementById('contact');
 
     this.setState({
-      message: `Salut Flo, j'aimerais offrir un moment de détente !\nPeux-tu me recontacter très vite !`
+      message: `Salut Flo, j'aimerais offrir un moment de détente !\n\nPersonne à chouchouter :\nType de massage:\n\nPeux-tu me recontacter très vite !`
     });
 
     scrollIntoView(node, {
@@ -314,7 +314,10 @@ class Chouchoute extends Component {
             <img className='img-full img-rounded' src={offer} />
           </div>  
           <div className='col-sm-7'>
-
+            <p className='text text-semi-dark'>
+              Noël, anniversaire, fête des mère, ou simplement pour faire plaisir à ton amie qui a besoin de se détendre ! Il te suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à me transmettre le jour du massage.<br/><br/>Carte cadeau est valable pendant un an !
+            </p>
+            <br/>
             <button 
               className='button-normal'
               onClick={this.offer}  
