@@ -236,9 +236,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-8 col-md-9 col-lg-10'>
-            <p className='text text-semi-dark'>👋 Salut les filles, moi c’est Flo ! J’aime le contact humain, bavarder, rigoler, prendre le temps de vous chouchouter et tout ça dans une ambiance cosy! Pourtant...</p>
-            <p className='text text-semi-dark'>Petit retour en arrière, nous sommes en 2016 quand mon adorable chéri m’organise un voyage surprise en Thaïlande ! Cela faisait un bout de temps que je voulais visiter l’Asie, découvrir sa culture, sa cuisine, son sourire mais surtout... ses massages !</p>
-            <p className='text text-semi-dark'>Quelques jours après notre arrivée c'est donc tout naturellement qu'au détour d'une petite rue de Chiang-Mai, nous avons tentez à l'improviste un salon de massage et ce fut un véritable... calvaire ! </p>
+            <p className='text text-semi-dark'>En cours de construction</p>
           </div>
         </div>
 
