@@ -1,5 +1,11 @@
 @import "constants.scss";
 
+#toast-container {
+  position: fixed !important;
+  z-index: 99999 !important;
+  pointer-events: none !important;
+}
+
 .toast {
   border-radius: 5px !important;
   &-success {
@@ -8,12 +14,6 @@
 
   &-error {
     background-color: $colorFailureDark !important;
-  }
-
-  &-container {
-    position: fixed !important;
-    z-index: 99999 !important;
-    pointer-events: none !important;
   }
 
   &-top-right {
