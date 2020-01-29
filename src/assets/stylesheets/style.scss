@@ -120,6 +120,11 @@ header {
     height: 160px;
   }
 
+  &-text {
+    display: block;
+    margin: 0 auto;
+  }
+
   &-full {
     width: 100%;
   }
