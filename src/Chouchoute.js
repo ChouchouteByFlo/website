@@ -144,7 +144,7 @@ class Chouchoute extends Component {
     const massage = event.target.value;
 
     this.setState({
-      message: `Salut Flo, je suis intéressée par le massage ${massage} !\nPeux-tu me recontacter très vite !`
+      message: `Salut Flo, je suis intéressée par le massage ${massage} !\nPeux-tu me recontacter très vite ! 😃`
     });
 
     scrollIntoView(node, {
@@ -225,7 +225,7 @@ class Chouchoute extends Component {
           <div className='col-sm-12'>
             <p className='text text-semi-dark'>On vous a peut-être offert un massage, à moins que vous ayez réussi à faire garder vos enfant quelques heures pour enfin penser à vous !?</p>
             <h3 className='title title-sub title-dark'>Vous êtes au bon endroit pour prendre soin de vous !</h3>
-            <p className='text text-semi-dark'>Si les Balinais se massent tous le temps, c'est qu'ils ont bien compris que les massages agissent de façon positive sur nos émotions et cela améliore la qualité du sommeil, réduit les tensions et redonne le sourire (le fameux que vous voyez partout en Asie).</p>
+            <p className='text text-semi-dark'>Si les Balinais se massent tous le temps, c'est qu'ils ont compris que les massages agissent de façon positive sur nos émotions et cela améliore la qualité du sommeil, réduit les tensions et redonne le sourire (le fameux que vous voyez partout en Asie).</p>
             <img src={imgSourire} />
             <p className='text text-semi-dark'>A Bali, comme à Java ou Lombok, le massage est un art de vivre pratiqué par tous, qui permet de se sentir bien au quotidien et qui tire plusieurs de ses mouvements des techniques de médecine locales, ayurvédique et chinoise.</p>
             <p className='text text-semi-dark'>En Indonésie le massage permet de prendre soin de son corps tout comme le sport ou la nutrition et grâce à ses mouvements toniques mais profonds le massage Balinais</p>
@@ -281,7 +281,7 @@ class Chouchoute extends Component {
               onClick={this.contact} 
               value='Murniati'  
             >
-              Chouchoutte ma ligne | 60€
+              Chouchoute ma ligne | 60€
             </button>
           </div>
           <div className='massage-item col-sm-6'>
@@ -292,7 +292,7 @@ class Chouchoute extends Component {
               onClick={this.contact}
               value='Indah'  
             >
-              Chouchoutte intégral | 80€
+              Chouchoute intégral | 80€
             </button>
           </div>
           <div className='massage-item col-sm-6'>
@@ -303,7 +303,7 @@ class Chouchoute extends Component {
               onClick={this.contact}  
               value='Dewi'
             >
-              Chouchoutte ma chevelure | 50€
+              Chouchoute ma chevelure | 50€
             </button>
           </div>
           <div className='massage-item col-sm-6'>
@@ -314,7 +314,7 @@ class Chouchoute extends Component {
               onClick={this.contact}  
               value='Lestari'
             >
-              Chouchoutte mon visage d'ange | 50€
+              Chouchoute mon visage d'ange | 50€
             </button>
           </div>
         </div>
@@ -329,7 +329,7 @@ class Chouchoute extends Component {
           </div>  
           <div className='col-sm-7'>
             <p className='text text-semi-dark'>
-              Noël, anniversaire, fête des mère, ou simplement pour faire plaisir à ton amie qui a besoin de se détendre ! Il te suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à me transmettre le jour du massage.<br/><br/>Carte cadeau est valable pendant un an !
+              Noël, anniversaire, fête des mères, ou simplement pour faire plaisir à ton amie qui a besoin de se détendre ! Il te suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à me transmettre le jour du massage.<br/><br/>Carte cadeau valable pendant un an !
             </p>
             <br/>
             <button 
