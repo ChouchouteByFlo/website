@@ -235,7 +235,7 @@ class Chouchoute extends Component {
           </div>
           <div className='col-sm-5'>
             <img className='img-text' src={imgSourire} />
-            <p className='text text-legend'>Yuyu et Iva qui viennent d'inventer l'inception massage 🌀</p>
+            <p className='text text-legend'>Yuyu et Iva qui viennent d'inventer "l'inception massage" 🌀</p>
           </div>
 
           <div className='col-sm-12'>
