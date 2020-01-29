@@ -226,7 +226,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-7'>
-            <p className='text text-semi-dark'>On vous a peut-être offert un massage, à moins que vous ayez réussi à faire garder vos enfant quelques heures pour enfin penser à vous !?</p>
+            <p className='text text-semi-dark'>On vous a peut-être offert un massage, à moins que vous ayez réussi à faire garder vos enfants quelques heures pour enfin penser à vous !?</p>
             <h3 className='title title-sub title-dark'>Vous êtes au bon endroit pour prendre soin de vous !</h3>
             <p className='text text-semi-dark'>Si les Balinais sont des si grands adeptes des massages, c'est qu'ils ont compris qu'ils agissent de façon positive sur nos émotions et cela améliore la qualité du sommeil, réduit les tensions et redonne le sourire (oui oui, je parle bien de celui que vous voyez partout en asie 😃).</p>
             <p className='text text-semi-dark'>A Bali, comme à Java ou Lombok, le massage est un art de vivre pratiqué par tous, qui permet de se sentir bien au quotidien et qui tire plusieurs de ses mouvements des techniques de médecine locales, ayurvédique et chinoise. Plus qu'un simple moment de détente, le massage est synonyme d'une bonne hygiène de vie comme le serait le sport ou la nutrition en occident.</p>
@@ -235,6 +235,7 @@ class Chouchoute extends Component {
           </div>
           <div className='col-sm-5'>
             <img className='img-text' src={imgSourire} />
+            <p className='text text-legend'>Yuyu et Iva qui viennent d'inventer l'inception massage 🌀</p>
           </div>
 
           <div className='col-sm-12'>

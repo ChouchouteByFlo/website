@@ -87,7 +87,11 @@ header {
     font-family: 'champagneregular';
   }
 
-
+  &-legend {
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+  }
 }
 
 .button {
