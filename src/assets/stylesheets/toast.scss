@@ -1,5 +1,12 @@
 @import "constants.scss";
 
+
+.toast-container {
+  position: fixed;
+  z-index: 99999;
+  pointer-events: none;
+}
+
 .toast {
   border-radius: 5px !important;
   &-success {
