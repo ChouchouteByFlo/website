@@ -157,7 +157,7 @@ class Chouchoute extends Component {
     const node = document.getElementById('contact');
 
     this.setState({
-      message: `Salut Flo, j'aimerais offrir un moment de détente !\n\nPersonne à chouchouter :\nType de massage:\n\nPeux-tu me recontacter très vite !`
+      message: `Salut Flo, j'aimerais offrir un moment de détente !\n\nPersonne à chouchouter :\nType de massage:\n\nPeux-tu me recontacter très vite ! 😃`
     });
 
     scrollIntoView(node, {
@@ -231,7 +231,7 @@ class Chouchoute extends Component {
             <p className='text text-semi-dark'>Si les Balinais sont des si grands adeptes des massages, c'est qu'ils ont compris qu'ils agissent de façon positive sur nos émotions et cela améliore la qualité du sommeil, réduit les tensions et redonne le sourire (oui oui, je parle bien de celui que vous voyez partout en asie 😃).</p>
             <p className='text text-semi-dark'>A Bali, comme à Java ou Lombok, le massage est un art de vivre pratiqué par tous, qui permet de se sentir bien au quotidien et qui tire plusieurs de ses mouvements des techniques de médecine locales, ayurvédique et chinoise. Plus qu'un simple moment de détente, le massage est synonyme d'une bonne hygiène de vie comme le serait le sport ou la nutrition en occident.</p>
             <p className='text text-semi-dark'>Le massage balinais a tout d'une danse au rythme lent qui offrira une profonde et durable relaxation à votre corps... et à votre esprit ! Je vous propose ainsi un accompagnement bienveillant et vous accorde toute mon attention durant un échange qui me permettra d’évaluer vos besoins durant le massage.</p>
-            <p className='text text-dark'>Au plaisir de vous chouchouter !</p>
+            <p className='title title-sub title-dark'>Au plaisir de vous chouchouter !</p>
           </div>
           <div className='col-sm-5'>
             <img className='img-text' src={imgSourire} />
