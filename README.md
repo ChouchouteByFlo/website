@@ -8,9 +8,11 @@
   <a href='https://chouchoutebyflo.com'>
     <img src="https://img.shields.io/badge/version-v1.0.0-blue" alt='Current version'>
   </a>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/99ed878c-c084-4d5b-9cf7-fc47b374d1b3/deploy-status)](https://app.netlify.com/sites/suspicious-newton-9f4541/deploys)
+
 </div>
 
+
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/99ed878c-c084-4d5b-9cf7-fc47b374d1b3/deploy-status)](https://app.netlify.com/sites/suspicious-newton-9f4541/deploys)
 <br/>
 
 
