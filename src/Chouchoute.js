@@ -10,6 +10,7 @@ import Emojoy from './Emojoy';
 
 import logo from './assets/images/logo.png';
 import flo from './assets/images/flo.jpg';
+import imgSourire from './assets/images/sourire.jpg';
 import img1 from './assets/images/sample-1.jpg';
 import img2 from './assets/images/sample-2.jpg';
 import img3 from './assets/images/sample-3.jpg';
@@ -222,7 +223,11 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-12'>
-            <p className='text text-semi-dark'>On vous a peut-être offert en cadeau un massage ou bien vous avez réussi à faire garder vos enfant quelques heure pour enfin penser à vous ?<br/>Quel chance !<br/>Vous allez voir, le massage agit de façon positive sur nos émotions, c’est vraiment magique !<br/>Il favorise la confiance et le sentiment de réconfort, qui invitent à la détente et à un véritable moment de bien-être.<br/>Je pratique un massage exotique qui en plus de vous détendre va vous faire voyager, il provient d’une partie du monde très lointaine, surnommée « l’île des dieux » !<br/>Ce nom fais rêver, n’est ce pas ?  Mais c’est où ?<br/>À Bali !<br/>Ici, comme encore à Java ou Lombok, la culture du massage est ancrée au cœur de toute les familles indonésiennes. C’est même un art de vivre ancestrale apprécié pour son équilibre exceptionnel. L’association de la médecine ayurvédique (la science indienne du corps et de l’esprit) ; la médecine énergétique chinoise et les techniques indonésiennes locales lui confère un intérêt unique. Il offre au corps apaisement et revitalisation grâce à ses mouvements toniques mais profonds !<br/>Le massage balinais a tout d'une danse au rythme lent qui offrira une profonde et durable relaxation à votre corps... et à votre esprit !<br/>Je vous propose ainsi un accompagnement bienveillant, et vous accorde toute mon attention durant un échange qui me permettra dévaluer vos besoins durant le massage.<br/>Au plaisir de vous chouchouter !</p>
+            <p className='text text-semi-dark'>On vous a peut-être offert un massage, à moins que vous ayez réussi à faire garder vos enfant quelques heures pour enfin penser à vous !?</p>
+            <h3 className='title title-sub title-dark'>Vous êtes au bon endroit pour prendre soin de vous !</h3>
+            <p className='text text-semi-dark'>Si les Balinais se papouillent tous le temps, c'est qu'ils ont bien compris que les massages agissent de façon positive sur nos émotions et cela améliore la qualité du sommeil, réduit les tensions et redonne le sourire (le fameux que vous voyez partout en Asie).</p>
+            <img className='img-line-item' src={imgSourire} />
+            <p className='text text-semi-dark'>A Bali, comme à Java ou Lombok, le massage est un art de vivre pratiqué par tous, qui permet de se sentir bien au quotidien et qui tire plusieurs de ses mouvements des techniques de médecine locales, ayurvédique et chinoise.</p>
           </div>
         </div>
 
@@ -241,11 +246,11 @@ class Chouchoute extends Component {
             <p className='text text-dark'>Nous sommes en 2016 quand mon adorable chéri m’organise un voyage surprise en Thaïlande ! Cela faisait un bout de temps que je voulais découvrir l’Asie, ses cultures, ses cuisines, ses sourires, mais surtout... ses massages !</p>
             <p className='text text-dark'>Quelques jours après notre arrivée, c’est tout naturellement qu’au détour d’une petite rue de Chiang-Mai, nous avons tenté à l’improviste un salon de massage et ce fut une délicieuse... torture !</p>
             <p className='text text-dark'>Après avoir essayé la fameuse technique du “soft please” avec le sourire, nous avons dû nous rendre à l’évidence, nos masseuses avaient déjà enclenché le mode touristes douillets et il ne nous restait alors qu’une option :  subir et contenir nos fous rires naissants à chaque croisement de regard !</p>
-            <p className='text text-dark'>Ressortis vivants et étonnamment détendu de cette expérience mémorable, j’aurais pu m’arrêter là et me dire que les massages n’étaient pas pour moi, mais c’est mal me connaître ! ...</p>
+            <p className='text text-dark'>Ressortis vivants et étonnamment détendu de cette expérience mémorable, j’aurais pu m’arrêter là et me dire que les massages n’étaient pas pour moi, mais c’est mal me connaître !</p>
             <h3 className='title title-sub title-dark'>Des mois plus tard...</h3>
             <p className='text text-dark'>En 2018 me voilà dans le 11ème arrondissement de Paris au côté de Ruth Indiathi, dans l’école de formation professionnelle « Le village balinais », réputée pour son savoir-faire et son respect des pratiques traditionnelles du massage indonésien.</p>
             <p className='text text-dark'>L’apprentissage du massage et la bienveillance ambiante qui règne autour de la culture Indonésienne me séduit tellement que je prends alors la décision de quitter mon boulot d’aide à la personne pour poursuivre ma formation avec Ruth.</p>
-            <p className='text text-dark'>Aujourd’hui me voilà embarquée dans cette belle aventure à laquelle je ne m’attendais pas il y a quelques années, et je dois bien avouer que cela me plait !</p>
+            <p className='text text-dark'>Aujourd’hui me voilà embarquée dans cette belle aventure à laquelle je ne m’attendais pas il y a quelques années et je dois bien avouer que cela me plait !</p>
             <p className='text text-dark'>Depuis la fin de l’année 2019 vous pouvez venir profiter d’un massage dans un espace chaleureux que j’ai aménagé à mon domicile !</p>
           </div>
         </div>
