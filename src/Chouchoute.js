@@ -258,9 +258,6 @@ class Chouchoute extends Component {
             <p className='text text-dark'>Quelques jours après notre arrivée, c’est tout naturellement qu’au détour d’une petite rue de Chiang-Mai, nous avons tenté à l’improviste un salon de massage et ce fut une délicieuse... torture !</p>
             <p className='text text-dark'>Après avoir essayé la fameuse technique du “soft please” avec le sourire, nous avons dû nous rendre à l’évidence, nos masseuses avaient déjà enclenché le mode touristes douillets et il ne nous restait alors qu’une option :  subir et contenir nos fous rires naissants à chaque croisement de regard !</p>
             <p className='text text-dark'>Ressortis vivants et étonnamment détendu de cette expérience mémorable, j’aurais pu m’arrêter là et me dire que les massages n’étaient pas pour moi, mais c’est mal me connaître !</p>
-          </div>
-
-          <div className="col-sm-12" >
             <h3 className='title title-sub title-dark'>Des mois plus tard...</h3>
             <p className='text text-dark'>En 2018 me voilà dans le 11ème arrondissement de Paris au côté de Ruth Indiathi, dans l’école de formation professionnelle « Le village balinais », réputée pour son savoir-faire et son respect des pratiques traditionnelles du massage indonésien.</p>
             <p className='text text-dark'>L’apprentissage du massage et la bienveillance ambiante qui règne autour de la culture Indonésienne me séduit tellement que je prends alors la décision de quitter mon boulot d’aide à la personne pour poursuivre ma formation avec Ruth.</p>
