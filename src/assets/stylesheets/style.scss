@@ -146,8 +146,12 @@ header {
   }
 
   &-by-flo {
-    width: 100%;
-    border-radius: 100%;
+    width: 85%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 25px;  
+    margin-left: 4px;
   }
 
   &-line {
@@ -168,4 +172,22 @@ iframe {
   min-height: 250px;
   border: none;
   margin-top: 10px;
+}
+
+#deco-img {
+  position: absolute;
+  width: 21vw;
+  height: 24vw;
+  top: 72px; left: 40px;
+  background-image: linear-gradient(153deg, $colorMain 50%, $colorGradientLight 95%);
+  border-radius: 10px;
+}
+
+#deco-img-2 {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  top: 12px; left: 10px;
+  background-image: linear-gradient(153deg, $colorMain 50%, $colorGradientLight 95%);
+  border-radius: 10px;
 }
