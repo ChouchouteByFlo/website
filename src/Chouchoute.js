@@ -245,6 +245,7 @@ class Chouchoute extends Component {
         <div id='by-flo' className='row part-dark'>
           <div className='col-sm-12 part-title'>
             <h2 className='title title-dark title-champagne'>By Flo<br/><div className='title-deco'/></h2>
+            <p className='text text-dark text-sub'>Moi c’est Flo ! J’aime le contact humain, bavarder, rigoler, prendre le temps de vous chouchouter et tout ça dans une ambiance apaisante ! Pourtant...</p>
           </div>
 
           <div className='col-sm-5 col-md-4 col-lg-3'>
@@ -252,7 +253,6 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-7 col-md-8 col-lg-9'>
-            <p className='text text-dark'>Moi c’est Flo ! J’aime le contact humain, bavarder, rigoler, prendre le temps de vous chouchouter et tout ça dans une ambiance apaisante ! Pourtant...</p>
             <h3 className='title title-sub title-dark'>Petit retour en arrière</h3>
             <p className='text text-dark'>Nous sommes en 2016 quand mon adorable chéri m’organise un voyage surprise en Thaïlande ! Cela faisait un bout de temps que je voulais découvrir l’Asie, ses cultures, ses cuisines, ses sourires, mais surtout... ses massages !</p>
             <p className='text text-dark'>Quelques jours après notre arrivée, c’est tout naturellement qu’au détour d’une petite rue de Chiang-Mai, nous avons tenté à l’improviste un salon de massage et ce fut une délicieuse... torture !</p>

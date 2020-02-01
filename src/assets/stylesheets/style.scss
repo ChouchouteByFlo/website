@@ -77,6 +77,11 @@ header {
     color: $colorMiddle;
   }
 
+  &-sub {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Nunito Sans';
+  }
 
   &-light {
     color: $colorSemiLight;
@@ -163,10 +168,4 @@ iframe {
   min-height: 250px;
   border: none;
   margin-top: 10px;
-}
-
-#by-flo {
-  p {
-    font-size: .8em;
-  }
 }
