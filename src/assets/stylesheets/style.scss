@@ -21,6 +21,7 @@ header {
     text-transform: uppercase;
     font-size: 1.8em;
     padding: 10px;
+    margin-bottom: 40px;
   }
 
   &-sub {
@@ -55,7 +56,13 @@ header {
   &-peps {
     font-size: 1.5em;
     font-family: 'amitaregular';
-    color: $colorPurpleDark;
+    color: $colorPurpleSemiDark;
+
+    &-big {
+      font-family: 'amitaregular';
+      color: $colorPurpleSemiDark;
+      font-size: 3.5em;
+    }
   }
 }
 
@@ -111,7 +118,8 @@ header {
   &-peps {
     font-size: 1.2em;
     font-family: 'amitaregular';
-    color: $colorSemiDark;
+    // color: $colorSemiDark;
+    color: $colorPurpleSemiDark;
   }
 }
 
