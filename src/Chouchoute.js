@@ -275,7 +275,7 @@ class Chouchoute extends Component {
             <h2 className='title title-champagne'>Votre massage<br/><div className='title-deco'/></h2>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière</span> <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière !</span> <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
             <p className='text text-dark'>Découvrez l’authentique massage du corps indonésien, apaisant, enveloppant et tonique. Il procure une détente profonde.</p>
             <p className="text text-peps">Destiné aux rêveuses et audacieuses !</p>
             <p className='text text-dark'>Choisissez 2 à 3 zones du corps à masser (pieds/jambes, dos*, ventre, bras/mains, visage/cuir chevelu) 
@@ -290,7 +290,7 @@ class Chouchoute extends Component {
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='murniati' /> Murniati, <span className='text text-small text-champagne'>L'Énergique</span>  <span class="badge badge-primary">60mn</span> <span class="badge badge-info">60€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <h2 className='title title-sub title-dark'><Emojoy name='murniati' /> Murniati, <span className='text text-small text-champagne'>L'Énergique !</span>  <span class="badge badge-primary">60mn</span> <span class="badge badge-info">60€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
             <p className='text text-dark'>Gardez votre ligne grâce à ce massage raffermissant, tonique et réconfortant sur le corps. Ce massage s’attarde tout particulièrement sur la zone ventrale permettant un drainage et une détente absolue de l’appareil digestif.</p>
             <p className="text text-peps">Etat méditatif assuré !</p>
             <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
@@ -303,7 +303,7 @@ class Chouchoute extends Component {
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='indah' special={true} /> Indah, <span className='text text-small text-champagne'>La Majestueuse</span> <span class="badge badge-primary">90mn</span> <span class="badge badge-info">80€</span></h2>
+            <h2 className='title title-sub title-dark'><Emojoy name='indah' special={true} /> Indah, <span className='text text-small text-champagne'>La Majestueuse !</span> <span class="badge badge-primary">90mn</span> <span class="badge badge-info">80€</span></h2>
             <p className='text text-dark'>Chouchoutage absolu des pieds à la tête. Issu du rituel traditionnel de bien-être balinais, ce massage procure un effet à la fois relaxant et vivifiant qui invite au lâcher-prise.</p>
             <p className="text text-peps">Relaxation complète du corps et de l’esprit !</p>
             <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
@@ -329,7 +329,7 @@ class Chouchoute extends Component {
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante</span>  <span class="badge badge-primary">45mn</span> <span class="badge badge-info">45€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante !</span>  <span class="badge badge-primary">45mn</span> <span class="badge badge-info">45€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
             <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
             <p className="text text-peps">Effet décoiffant garanti !</p>
             <p className='text text-dark'>Masque au beurre de karité, huile de jojoba et huile de ricin (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
