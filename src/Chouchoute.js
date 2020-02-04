@@ -249,8 +249,8 @@ class Chouchoute extends Component {
 
           <div id="img-flo" className='col-sm-3'>
             <img className='img-by-flo' src={flo} />
-            <div id="deco-img"></div>
-            <div id="deco-img-2"></div>
+            {/* <div id="deco-img"></div> */}
+            {/* <div id="deco-img-2"></div> */}
           </div>
 
           <div className='col-sm-9'>
@@ -344,7 +344,7 @@ class Chouchoute extends Component {
           </div>
         </div>
 
-        <div id='gift-card' className='row part'>
+        <div id='gift-card' className='row part-dark'>
           <div className='col-sm-12 part-title'>
             <h2 className='title title-champagne'>Carte cadeau<br/><div className='title-deco'/></h2>
           </div>
