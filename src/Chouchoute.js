@@ -316,29 +316,30 @@ class Chouchoute extends Component {
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante</span>  <span class="badge badge-primary">45mn</span> <span class="badge badge-info">45€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
-            <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
-            <p className="text text-peps">Effet décoiffant garanti !</p>
-            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
-            <button 
-              className='button-normal'
-              onClick={this.contact}  
-              value='Dewi'
-            >
-              Chouchoute ma chevelure
-            </button>
-          </div>
-          <div className='massage-item col-sm-6'>
             <h2 className='title title-sub title-dark'><Emojoy name='lestari' /> Lestari, <span className='text text-small text-champagne'>L'Éternelle !</span> <span class="badge badge-primary">50mn</span> <span class="badge badge-info">45€</span></h2>
             <p className='text text-dark'>Véritable soin de jouvence, ce massage allie beauté du visage et bien-être. Il apporte au visage un effet liftant en stimulant la microcirculation sanguine et procure un état d’apaisement.</p>
             <p className="text text-peps">Retrouvez une mine radieuse avec ce massage liftant du visage !</p>
-            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
+            <p className='text text-dark'>Massage à l’huile végétale de chanvre, beurre de karité et huile essentielle de bois de rose (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
               value='Lestari'
             >
               Chouchoute mon visage d'ange
+            </button>
+          </div>
+          <div className='massage-item col-sm-6'>
+            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante</span>  <span class="badge badge-primary">45mn</span> <span class="badge badge-info">45€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
+            <p className="text text-peps">Effet décoiffant garanti !</p>
+            <p className='text text-dark'>Masque au beurre de karité, huile de jojoba et huile de ricin (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
+            <p className='text text-dark'>Massage pratiqué sur fauteuil. Possibilité de déplacement à domicile sur le secteur de Vannes.</p>
+            <button 
+              className='button-normal'
+              onClick={this.contact}  
+              value='Dewi'
+            >
+              Chouchoute ma chevelure
             </button>
           </div>
         </div>
