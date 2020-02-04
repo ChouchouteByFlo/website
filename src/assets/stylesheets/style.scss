@@ -51,6 +51,12 @@ header {
     margin-top: 10px;
     background-image: linear-gradient(153deg, $colorMain 50%, $colorGradientLight 95%);
   }
+
+  &-peps {
+    font-size: 1.5em;
+    font-family: 'amitaregular';
+    color: $colorPurpleDark;
+  }
 }
 
 .text {
