@@ -9,7 +9,7 @@ import scrollIntoView from 'scroll-into-view-if-needed';
 import Emojoy from './Emojoy';
 
 import logo from './assets/images/logo.png';
-import flo from './assets/images/profile.png';
+import flo from './assets/images/pro-flo.png';
 import imgSourire from './assets/images/sourire.jpg';
 import img1 from './assets/images/sample-1.jpg';
 import img2 from './assets/images/sample-2.jpg';
