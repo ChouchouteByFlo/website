@@ -82,3 +82,20 @@
     font-weight: normal;
     font-style: normal;
 }
+
+// Amita
+@font-face {
+    font-family: 'amitabold';
+    src: url('../fonts/amita-bold-webfont.woff2') format('woff2'),
+         url('../fonts/amita-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amitaregular';
+    src: url('../fonts/amita-regular-webfont.woff2') format('woff2'),
+         url('../fonts/amita-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

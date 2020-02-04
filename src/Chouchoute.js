@@ -275,58 +275,70 @@ class Chouchoute extends Component {
             <h2 className='title title-champagne'>Votre massage<br/><div className='title-deco'/></h2>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière</span> </h2>
-            <p className='text text-dark'>Découvrez le massage du corps balinais, apaisant et enveloppant. Destiné aux rêveuses et audacieuses !</p>
+            <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière</span> <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <p className='text text-dark'>Découvrez l’authentique massage du corps indonésien, apaisant, enveloppant et tonique. Il procure une détente profonde.</p>
+            <p className="text text-peps">Destiné aux rêveuses et audacieuses !</p>
+            <p className='text text-dark'>Choisissez 2 à 3 zones du corps à masser (pieds/jambes, dos*, ventre, bras/mains, visage/cuir chevelu) 
+*équivaut à 2 zones</p>
+            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
               value='Wangi'
             >
-              Chouchoute mon corps | 50€
+              Chouchoute mon corps
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='murniati' /> Murniati, <span className='text text-small text-champagne'>L'Énergique</span></h2>
-            <p className='text text-dark'>Gardez votre ligne grâce à ce massage raffermissant, tonique et réconfortant. Favorise la confiance en soi !</p>
+            <h2 className='title title-sub title-dark'><Emojoy name='murniati' /> Murniati, <span className='text text-small text-champagne'>L'Énergique</span>  <span class="badge badge-primary">60mn</span> <span class="badge badge-info">60€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <p className='text text-dark'>Gardez votre ligne grâce à ce massage raffermissant, tonique et réconfortant sur le corps. Ce massage s’attarde tout particulièrement sur la zone ventrale permettant un drainage et une détente absolue de l’appareil digestif.</p>
+            <p className="text text-peps">Etat méditatif assuré !</p>
+            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact} 
               value='Murniati'  
             >
-              Chouchoute ma ligne | 60€
+              Chouchoute mon ventre
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='indah' special={true} /> Indah, <span className='text text-small text-champagne'>La Majestueuse</span></h2>
-            <p className='text text-dark'>Chouchoutage absolu sur tout le corps. Procure une détente intense !</p>
+            <h2 className='title title-sub title-dark'><Emojoy name='indah' special={true} /> Indah, <span className='text text-small text-champagne'>La Majestueuse</span> <span class="badge badge-primary">90mn</span> <span class="badge badge-info">80€</span></h2>
+            <p className='text text-dark'>Chouchoutage absolu des pieds à la tête. Issu du rituel traditionnel de bien-être balinais, ce massage procure un effet à la fois relaxant et vivifiant qui invite au lâcher-prise.</p>
+            <p className="text text-peps">Relaxation complète du corps et de l’esprit !</p>
+            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact}
               value='Indah'  
             >
-              Chouchoute intégral | 80€
+              Chouchoute intégral
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante</span></h2>
-            <p className='text text-dark'>Ce soin traditionnel balinais allie bien-être et beauté des cheveux. Effet relaxant et décoiffant garanti !</p>
+            <h2 className='title title-sub title-dark'><Emojoy name='dewi' special={true} /> Dewi, <span className='text text-small text-champagne'>La Flamboyante</span>  <span class="badge badge-primary">45mn</span> <span class="badge badge-info">45€</span> <span className="text text-or">ou</span>  <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
+            <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
+            <p className="text text-peps">Effet décoiffant garanti !</p>
+            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
               value='Dewi'
             >
-              Chouchoute ma chevelure | 50€
+              Chouchoute ma chevelure
             </button>
           </div>
           <div className='massage-item col-sm-6'>
-            <h2 className='title title-sub title-dark'><Emojoy name='lestari' /> Lestari, <span className='text text-small text-champagne'>L'Éternelle !</span></h2>
-            <p className='text text-dark'>Retrouvez une mine radieuse avec ce massage liftant du visage !</p>
+            <h2 className='title title-sub title-dark'><Emojoy name='lestari' /> Lestari, <span className='text text-small text-champagne'>L'Éternelle !</span> <span class="badge badge-primary">50mn</span> <span class="badge badge-info">45€</span></h2>
+            <p className='text text-dark'>Véritable soin de jouvence, ce massage allie beauté du visage et bien-être. Il apporte au visage un effet liftant en stimulant la microcirculation sanguine et procure un état d’apaisement.</p>
+            <p className="text text-peps">Retrouvez une mine radieuse avec ce massage liftant du visage !</p>
+            <p className='text text-dark'>Massage aux huiles végétales de coco, sésame et macadamia. (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
               value='Lestari'
             >
-              Chouchoute mon visage d'ange | 50€
+              Chouchoute mon visage d'ange
             </button>
           </div>
         </div>
@@ -341,7 +353,7 @@ class Chouchoute extends Component {
           </div>  
           <div className='col-sm-7'>
             <p className='text text-semi-dark'>
-              Noël, anniversaire, fête des mères, ou simplement pour faire plaisir à ton amie qui a besoin de se détendre ! Il te suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à me transmettre le jour du massage.<br/><br/>Carte cadeau valable pendant un an !
+              Noël, anniversaire, fête des mères, ou simplement pour faire plaisir à votre amie qui a besoin de se détendre ! Il vous suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à transmettre le jour du massage.<br/><br/>Carte cadeau valable pendant un an !
             </p>
             <br/>
             <button 

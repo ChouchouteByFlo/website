@@ -97,6 +97,16 @@ header {
     text-align: center;
     margin-top: 8px;
   }
+
+  &-or {
+    font-family: 'champagneregular';
+  }
+
+  &-peps {
+    font-size: 1.2em;
+    font-family: 'amitaregular';
+    color: $colorSemiDark;
+  }
 }
 
 .button {
@@ -116,6 +126,17 @@ header {
     }
   }
 }
+
+.badge {
+  &-primary {
+    background-color: $colorSecond !important;
+  }
+
+  &-info {
+    background-color: #F4BA6E !important;
+  }
+}
+
 
 .massage {
   &-item {
@@ -188,6 +209,7 @@ iframe {
   width: 12vw;
   height: 12vw;
   top: 12px; left: 10px;
-  background-image: linear-gradient(153deg, $colorMain 50%, $colorGradientLight 95%);
+  
+  background-image: linear-gradient(153deg, $colorGradientDark 0%, $colorMain 75%);
   border-radius: 10px;
 }
