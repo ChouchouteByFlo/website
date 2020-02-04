@@ -272,7 +272,7 @@ class Chouchoute extends Component {
 
         <div id='massages' className='row part'>
           <div className='col-sm-12 part-title'>
-            <h2 className='title title-champagne'>Votre massage<br/><div className='title-deco'/></h2>
+            <h1 className='title title-champagne'>Votre massage<br/><div className='title-deco'/></h1>
           </div>
           <div className='massage-item col-sm-6'>
             <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière !</span> <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
