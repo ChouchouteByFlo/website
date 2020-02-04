@@ -286,7 +286,7 @@ class Chouchoute extends Component {
               onClick={this.contact}  
               value='Wangi'
             >
-              Chouchoute mon corps
+              Chouchoute découverte
             </button>
           </div>
           <div className='massage-item col-sm-6'>
