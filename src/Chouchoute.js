@@ -355,7 +355,7 @@ class Chouchoute extends Component {
           <div className='col-sm-7'>
             <h3 className='title title-sub title-peps-big'>Noël, anniversaire,<br/> fête des mères...</h3>
             <p className='text text-semi-dark'>
-            ...ou simplement pour faire plaisir à votre amie qui a besoin de se détendre ! Il vous suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous receverez ensuite votre carte cadeau par email avec un code à transmettre le jour du massage.<br/><br/>Carte cadeau valable pendant un an !
+            ...ou simplement pour faire plaisir à votre amie qui a besoin de se détendre ! Il vous suffit de cliquer sur le bouton ci-dessous 👇 en précisant le massage à offrir ainsi que la personne à chouchouter !<br/><br/>Vous recevrez ensuite votre carte cadeau par email avec un code à transmettre le jour du massage.<br/><br/>Carte cadeau valable pendant un an !
             </p>
             <br/>
             <button 
