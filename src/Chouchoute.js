@@ -208,12 +208,12 @@ class Chouchoute extends Component {
 
         <div className='img-line'>
           <Slider {...settings}>
-            <img className='img-line-item' src={img1} />
-            <img className='img-line-item' src={img2} />
-            <img className='img-line-item' src={img3} />
-            <img className='img-line-item' src={img4} />
-            <img className='img-line-item' src={img5} />
-            <img className='img-line-item' src={img6} />
+            <img className='img-line-item' src={img1} alt="massage du visage" />
+            <img className='img-line-item' src={img2} alt="espace de massage"  />
+            <img className='img-line-item' src={img3} alt="photo de Bali"  />
+            <img className='img-line-item' src={img4} alt="huiles de massage"  />
+            <img className='img-line-item' src={img5} alt="fleurs rose"  />
+            <img className='img-line-item' src={img6} alt="décoration salon d'attente"  />
           </Slider>
         </div>
 
@@ -234,7 +234,7 @@ class Chouchoute extends Component {
             <p className='title title-sub title-dark'>Au plaisir de vous chouchouter !</p>
           </div>
           <div className='col-sm-5'>
-            <img className='img-text' src={imgSourire} />
+            <img className='img-text' src={imgSourire} alt="Yuyu et Iva pendant un massage"  />
             <p className='text text-legend'>Yuyu et Iva qui viennent d'inventer "l'inception massage" 🌀</p>
           </div>
 
@@ -248,7 +248,7 @@ class Chouchoute extends Component {
           </div>
 
           <div id="img-flo" className='col-sm-3'>
-            <img className='img-by-flo' src={flo} />
+            <img className='img-by-flo' src={flo} alt="Flo pendant un massage" />
           </div>
 
           <div className='col-sm-9'>
@@ -348,7 +348,7 @@ class Chouchoute extends Component {
           </div>
 
           <div className='col-sm-5'>
-            <img className='img-full img-rounded' src={offer} />
+            <img className='img-full img-rounded' src={offer} alt="carte cadeau"  />
           </div>  
           <div className='col-sm-7'>
             <h3 className='title title-sub title-peps-big'>Noël, anniversaire,<br/> fête des mères...</h3>
