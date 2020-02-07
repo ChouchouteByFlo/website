@@ -15,6 +15,7 @@
   <a href="https://codebeat.co/projects/github-com-chouchoutebyflo-website-master"><img alt="codebeat badge" src="https://codebeat.co/badges/ab0b29d9-5139-4b85-9324-9542b5dcdea3" /></a>
   <a href="https://scrutinizer-ci.com/g/ChouchouteByFlo/website/?branch=master"><img alt="scrutinizer badge" src="https://scrutinizer-ci.com/g/ChouchouteByFlo/website/badges/quality-score.png?b=master" /></a>
   <a href="https://snyk.io/test/github/ChouchouteByFlo/website?targetFile=package.json"><img src="https://snyk.io/test/github/ChouchouteByFlo/website/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/ChouchouteByFlo/website?targetFile=package.json" style="max-width:100%;"></a>
+  <a href="https://www.codacy.com/gh/ChouchouteByFlo/website?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ChouchouteByFlo/website&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/cd643ce3c9bb461a883898aa7eab4df8"/></a>
 </div>
 
 <br/>
