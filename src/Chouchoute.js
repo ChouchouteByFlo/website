@@ -7,7 +7,7 @@ import toastr from "toastr";
 import Slider from "react-slick";
 import scrollIntoView from "scroll-into-view-if-needed";
 import Emojoy from "./Emojoy";
-import Title from "./Title"
+import Title from "./Title";
 import DurationPriceBadges from "./DurationPriceBadges";
 
 import logo from "./assets/images/logo-160.jpg";
@@ -38,9 +38,9 @@ class Chouchoute extends Component {
       email: null,
       phone: null,
       content: null,
-      message: '',
+      message: "",
       sending: false
-    }
+    };
 
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
@@ -58,7 +58,7 @@ class Chouchoute extends Component {
   formattedData() {
     let { name, email, phone, content, message } = this.state;  
     let messageContent = content ? content : message; 
-    let phoneNum = phone ? phone : 'Non renseigné'
+    let phoneNum = phone ? phone : 'Non renseigné';
     let text = `<@flo> Formulaire de contact\n\nMessage de ${name}\n:email: ${email}\n:phone: ${phoneNum}\n\n${messageContent}`;
 
     return (
@@ -85,38 +85,38 @@ class Chouchoute extends Component {
             withCredentials: false,
             transformRequest: [
               (data, headers) => {
-                delete headers.post["Content-Type"]
-                return data
+                delete headers.post["Content-Type"];
+                return data;
               }
             ]
           }
         ).then(res => {
           if (res.status === 200) {
-            toastr.success('Message envoyé avec succes !')
+            toastr.success("Message envoyé avec succes !");
           } else {
-            toastr.success('Une erreur est survenu ...')
+            toastr.success("Une erreur est survenu ...");
           }
         })
       } else {
-        toastr.error('Veuillez entrer une adresse email valide')
+        toastr.error("Veuillez entrer une adresse email valide");
       }
     } else {
-      this.toastError(messageContent, email, name)
+      this.toastError(messageContent, email, name);
     }
   }
 
   toastError(messageContent, email, name) {
     if (!messageContent) {
-      toastr.error('Veuillez entrer un message')
+      toastr.error("Veuillez entrer un message");
     }
     if (!email) {
-      toastr.error('Veuillez entrer une adresse email')
+      toastr.error("Veuillez entrer une adresse email");
     }
     if (!/\S+@\S+\.\S+/.test(email)) {
-      toastr.error('Veuillez entrer une adresse email valide')
+      toastr.error("Veuillez entrer une adresse email valide");
     }
     if (!name) {
-      toastr.error('Veuillez entrer votre nom et prénom')
+      toastr.error("Veuillez entrer votre nom et prénom");
     }
   }
 
@@ -146,7 +146,7 @@ class Chouchoute extends Component {
   }
 
   contact(event) {
-    const node = document.getElementById('contact');
+    const node = document.getElementById("contact");
     const massage = event.target.value;
 
     this.setState({
@@ -173,7 +173,6 @@ class Chouchoute extends Component {
   }
 
   scroll(to) {
-    console.log(to);
     let destination = document.getElementById(to);
 
     scrollIntoView(destination, {
@@ -203,19 +202,19 @@ class Chouchoute extends Component {
             <nav>
               <ul>
                 <li>
-                  <button onClick={() => this.scroll('chouchoute')}>Chouchoute</button>
+                  <button onClick={() => this.scroll("chouchoute")}>Chouchoute</button>
                 </li>
                 <li>
-                  <button onClick={() => this.scroll('by-flo')}>By Flo</button>
+                  <button onClick={() => this.scroll("by-flo")}>By Flo</button>
                 </li>
                 <li>
-                  <button onClick={() => this.scroll('massages')}>Votre massage</button>
+                  <button onClick={() => this.scroll("massages")}>Votre massage</button>
                 </li>
                 <li>
-                  <button onClick={() => this.scroll('gift-card')}>Carte cadeau</button>
+                  <button onClick={() => this.scroll("gift-card")}>Carte cadeau</button>
                 </li>
                 <li>
-                  <button onClick={() => this.scroll('contact')}>Me contacter</button>
+                  <button onClick={() => this.scroll("contact")}>Me contacter</button>
                 </li>             
               </ul>
             </nav>
@@ -417,11 +416,11 @@ class Chouchoute extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-const yieldNode = document.querySelector('#yield');
+const yieldNode = document.querySelector("#yield");
 
 ReactDOM.render(
   <Chouchoute />,
