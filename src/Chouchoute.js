@@ -48,10 +48,12 @@ class Chouchoute extends Component {
     this.handleContent = this.handleContent.bind(this);
     this.formattedData = this.formattedData.bind(this);
     this.toastError = this.toastError.bind(this);
+    this.toastSuccess = this.toastSuccess.bind(this);
     this.contact = this.contact.bind(this);
     this.offer = this.offer.bind(this);
     this.send = this.send.bind(this);
     this.scroll = this.scroll.bind(this);
+    this.postSlack = this.postSlack.bind(this);
   }
 
 
@@ -73,35 +75,42 @@ class Chouchoute extends Component {
   send() {
     let { name, email, content, message } = this.state;  
     let messageContent = content ? content : message; 
-    let hookPartOne = HOOK_PART_ONE.replace(/G5/, 'G4');
-    let hookPartTwo = HOOK_PART_TWO.replace(/OCK/, 'KEY');
 
     if (name && email && messageContent) {
       if (/\S+@\S+\.\S+/.test(email)) {
-        axios.post(
-          `https://hooks.slack.com/services/${hookPartOne}/${hookPartTwo}/${HOOK_PART_THREE}`, 
-          this.formattedData(), 
-          {
-            withCredentials: false,
-            transformRequest: [
-              (data, headers) => {
-                delete headers.post["Content-Type"];
-                return data;
-              }
-            ]
-          }
-        ).then(res => {
-          if (res.status === 200) {
-            toastr.success("Message envoyé avec succes !");
-          } else {
-            toastr.success("Une erreur est survenu ...");
-          }
-        })
+        this.postSlack();
       } else {
         toastr.error("Veuillez entrer une adresse email valide");
       }
     } else {
       this.toastError(messageContent, email, name);
+    }
+  }
+
+  postSlack() {
+    let hookPartOne = HOOK_PART_ONE.replace(/G5/, 'G4');
+    let hookPartTwo = HOOK_PART_TWO.replace(/OCK/, 'KEY');
+
+    axios.post(
+      `https://hooks.slack.com/services/${hookPartOne}/${hookPartTwo}/${HOOK_PART_THREE}`, 
+      this.formattedData(), 
+      {
+        withCredentials: false,
+        transformRequest: [
+          (data, headers) => {
+            delete headers.post["Content-Type"];
+            return data;
+          }
+        ]
+      }
+    ).then(res => { this.toastSuccess(res) });
+  }
+
+  toastSuccess(res) {
+    if (res.status === 200) {
+      toastr.success("Message envoyé avec succes !");
+    } else {
+      toastr.success("Une erreur est survenu ...");
     }
   }
 
