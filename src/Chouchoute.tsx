@@ -30,8 +30,8 @@ const HOOK_PART_ONE = 'T3X6T9YG5';
 const HOOK_PART_TWO = 'BS4RGLOCK';
 const HOOK_PART_THREE = '6dyhTJ7EMRlUoq6Vu9FSdYhF';
 
-export interface IProps {};
-export interface IState {
+interface IProps {};
+interface IState {
   name: string;
   email: string;
   phone: string;
@@ -72,9 +72,7 @@ class Chouchoute extends Component<IProps, IState> {
 
     return (
       JSON.stringify(
-        {
-          "text": text
-        }
+        { "text": text }
       )
     );
   }
@@ -114,7 +112,7 @@ class Chouchoute extends Component<IProps, IState> {
     }
   }
 
-  toastError(messageContent, email, name) {
+  toastError(messageContent: string, email: string, name: string) {
     if (!messageContent) {
       toastr.error('Veuillez entrer un message')
     }
@@ -129,32 +127,32 @@ class Chouchoute extends Component<IProps, IState> {
     }
   }
 
-  handleEmail(event) {
+  handleEmail(event: any) {
     this.setState({
       email: event.target.value
     });
   }
 
-  handleName(event) {
+  handleName(event: any) {
     this.setState({
       name: event.target.value
     });
   }
 
-  handlePhone(event) {
+  handlePhone(event: any) {
     this.setState({
       phone: event.target.value
     });
   }
 
-  handleContent(event) {
+  handleContent(event: any) {
     this.setState({
       message: '',
       content: event.target.value
     });
   }
 
-  contact(event) {
+  contact(event: any) {
     const node = document.getElementById('contact');
     const massage = event.target.value;
 

@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Emojoy = ({name, special=false}) => {
+interface IEmojoy {
+  name: string;
+  special: boolean;
+}
+
+const Emojoy = ({name, special=false}: IEmojoy) => {
   return (
     <img 
       className={`emojoy ${special ? 'emojoy-big' : ''}`}

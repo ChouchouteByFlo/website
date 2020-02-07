@@ -14,7 +14,7 @@ const cssLoaders =
   ]
 
 let config = {
-  entry: './src/Chouchoute.ts',
+  entry: './src/Chouchoute.tsx',
   output: {
     filename: 'bundle.min.js',
     path: resolve(__dirname, '')
@@ -95,7 +95,7 @@ let config = {
     new MinifyPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx', 'ts'],
+    extensions: ['.js', '.jsx', 'ts', 'tsx'],
     modules: [
       resolve('./src'),
       resolve('./node_modules')
