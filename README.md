@@ -11,6 +11,7 @@
   <a href='https://app.netlify.com/sites/suspicious-newton-9f4541/deploys'>
     <img src="https://api.netlify.com/api/v1/badges/99ed878c-c084-4d5b-9cf7-fc47b374d1b3/deploy-status" alt='Netlify status'>
   </a>
+  <a href="https://codeclimate.com/github/ChouchouteByFlo/website/maintainability"><img src="https://api.codeclimate.com/v1/badges/015fc0766e44f8357ad7/maintainability" /></a>
 </div>
 <br/>
 
