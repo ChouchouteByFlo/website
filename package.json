@@ -1,15 +1,13 @@
 {
-  "name": "chouchoute",
+  "name": "chouchoutebyflo",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development",
-    "buildProd": "webpack --mode=production",
+    "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
     "webpack": "webpack-dev-server",
-    "netlify": "npm install && npm run buildProd"
+    "netlify": "npm install && npm run build"
   },
   "author": "Nicolas LE CHENIC",
   "devDependencies": {
