@@ -179,6 +179,15 @@ class Chouchoute extends Component<IProps, IState> {
     });
   }
 
+  scroll(to: string) {
+    let destination = document.getElementById(to);
+
+    scrollIntoView(destination, {
+      block: 'center',
+      behavior: 'smooth'
+    });
+  }
+
   render() {
     const settings = {
       className: "slider variable-width",
