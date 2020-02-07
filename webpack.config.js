@@ -1,12 +1,12 @@
-const path = require('path')
+const path = require("path")
 const extractTextPlugin = require("extract-text-webpack-plugin");
-const MinifyPlugin = require('babel-minify-webpack-plugin');
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 const mode = process.env.NODE_ENV;
 
 const cssLoaders = 
   [
     {
-      loader: 'css-loader',
+      loader: "css-loader",
       options: {
         importLoaders: 1
       }
@@ -14,10 +14,10 @@ const cssLoaders =
   ]
 
 let config = {
-  entry: './src/Chouchoute.js',
+  entry: "./src/Chouchoute.js",
   output: {
-    filename: 'bundle.min.js',
-    path: path.resolve(__dirname, '')
+    filename: "bundle.min.js",
+    path: path.resolve(__dirname, "")
   },
   mode: mode,
   module: {
@@ -32,25 +32,25 @@ let config = {
       {
         test: /\.css$/,
         use: extractTextPlugin.extract({
-          fallback: 'style-loader',
+          fallback: "style-loader",
           use: cssLoaders
         })
       },
       {
         test: /\.scss$/,
         use: extractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [...cssLoaders, 'sass-loader']
+          fallback: "style-loader",
+          use: [...cssLoaders, "sass-loader"]
         })
       },
       {
         test: /\.(woff2?|eot|ttf|otf|wav)(\?.*)?$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: './dist/fonts/'
+              name: "[name].[ext]",
+              outputPath: "./dist/fonts/"
             }
           }
         ]
@@ -59,17 +59,17 @@ let config = {
         test: /\.(png|svg|jpe?g|gif)(\?.*)?$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: { 
               limit: 8192, 
-              outputPath: './dist/images/'
+              outputPath: "./dist/images/"
             }
           },
           {
-            loader: 'img-loader',
+            loader: "img-loader",
             options: { 
               enabled: false,
-              outputPath: './dist/images/'
+              outputPath: "./dist/images/"
             }
           }
         ]
@@ -78,24 +78,24 @@ let config = {
   },
   plugins: [
     new extractTextPlugin({
-      filename: 'application.min.css',
+      filename: "application.min.css",
       disable: true
     }),
     new MinifyPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
     modules: [
-      path.resolve('./src'),
-      path.resolve('./node_modules')
+      path.resolve("./src"),
+      path.resolve("./node_modules")
     ]
   },
   devServer: {
-    contentBase: path.resolve('./'),
+    contentBase: path.resolve("./"),
     compress: true,
     historyApiFallback: true,
     port: 3210
   }
-}
+};
 
 module.exports = config;
