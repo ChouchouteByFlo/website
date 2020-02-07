@@ -7,18 +7,19 @@ import toastr from 'toastr';
 import Slider from 'react-slick';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import Emojoy from './Emojoy';
-import Title from './Title'
+import Title from './Title';
 
-import logo from './assets/images/logo-160.jpg';
-import flo from './assets/images/pro-flo.jpg';
-import imgSourire from './assets/images/sourire.jpg';
-import img1 from './assets/images/sample-1.jpg';
-import img2 from './assets/images/sample-2.jpg';
-import img3 from './assets/images/sample-3.jpg';
-import img4 from './assets/images/sample-4.jpg';
-import img5 from './assets/images/sample-5.jpg';
-import img6 from './assets/images/sample-6.jpg';
-import offer from './assets/images/offer.jpg';
+const logo = require('./assets/images/logo-160.jpg');
+const flo = require('./assets/images/pro-flo.jpg');
+const imgSourire = require('./assets/images/sourire.jpg');
+const img1 = require('./assets/images/sample-1.jpg');
+const img2 = require('./assets/images/sample-2.jpg');
+const img3 = require('./assets/images/sample-3.jpg');
+const img4 = require('./assets/images/sample-4.jpg');
+const img5 = require('./assets/images/sample-5.jpg');
+const img6 = require('./assets/images/sample-6.jpg');
+const offer = require('./assets/images/offer.jpg');
+
 import './assets/stylesheets/style.scss';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,8 +30,18 @@ const HOOK_PART_ONE = 'T3X6T9YG5';
 const HOOK_PART_TWO = 'BS4RGLOCK';
 const HOOK_PART_THREE = '6dyhTJ7EMRlUoq6Vu9FSdYhF';
 
-class Chouchoute extends Component {
-  constructor(props) {
+export interface IProps {};
+export interface IState {
+  name: string;
+  email: string;
+  phone: string;
+  content: string;
+  message: string;
+  sending: boolean;
+};
+
+class Chouchoute extends Component<IProps, IState> {
+  constructor(props: IProps) {
     super(props);
     this.state =  {
       name: null,

@@ -5,3 +5,4 @@ dist/images/*
 src/assets/.DS_Store
 src/assets/images/.DS_Store
 bundle.min.js
+emoji.memo

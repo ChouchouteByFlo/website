@@ -1,4 +1,4 @@
-const path = require('path')
+const {resolve} = require('path')
 const extractTextPlugin = require("extract-text-webpack-plugin");
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 const mode = process.env.NODE_ENV;
@@ -14,21 +14,32 @@ const cssLoaders =
   ]
 
 let config = {
-  entry: './src/Chouchoute.js',
+  entry: './src/Chouchoute.ts',
   output: {
     filename: 'bundle.min.js',
-    path: path.resolve(__dirname, '')
+    path: resolve(__dirname, '')
   },
   mode: mode,
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
+        loader: 'source-map-loader',
+        enforce: 'pre'
+      },
+      {
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
         }
       },
+      {
+        test: /\.tsx?$/,
+        loader: ['awesome-typescript-loader?module=es6'],
+        exclude: [/node_modules/]
+      },
+
       {
         test: /\.css$/,
         use: extractTextPlugin.extract({
@@ -84,14 +95,14 @@ let config = {
     new MinifyPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', 'ts'],
     modules: [
-      path.resolve('./src'),
-      path.resolve('./node_modules')
+      resolve('./src'),
+      resolve('./node_modules')
     ]
   },
   devServer: {
-    contentBase: path.resolve('./'),
+    contentBase: resolve('./'),
     compress: true,
     historyApiFallback: true,
     port: 3210
