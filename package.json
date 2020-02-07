@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=development",
-    "buildProd": "webpack -p --config ./webpack.production.config.js",
+    "buildProd": "webpack --mode=production",
     "watch": "webpack --watch --mode=development",
     "webpack": "webpack-dev-server",
     "netlify": "npm install && npm run buildProd"
