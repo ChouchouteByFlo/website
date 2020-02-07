@@ -7,6 +7,7 @@ import toastr from 'toastr';
 import Slider from 'react-slick';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import Emojoy from './Emojoy';
+import Title from './Title'
 
 import logo from './assets/images/logo-160.jpg';
 import flo from './assets/images/pro-flo.jpg';
@@ -218,9 +219,7 @@ class Chouchoute extends Component {
         </div>
 
         <div id='chouchoute' className='row part'>
-          <div className='col-sm-12 part-title'>
-            <h2 className='title title-champagne'>Chouchoute<br/><div className='title-deco'/></h2>
-          </div>
+          <Title content='Chouchoute' />
 
           <div className='col-sm-12'>
           </div>
@@ -243,9 +242,7 @@ class Chouchoute extends Component {
         </div>
 
         <div id='by-flo' className='row part-dark'>
-          <div className='col-sm-12 part-title'>
-            <h2 className='title title-dark title-champagne'>By Flo<br/><div className='title-deco'/></h2>
-          </div>
+          <Title content='By Flo' />
 
           <div id="img-flo" className='col-sm-3'>
             <img className='img-by-flo' src={flo} alt="Flo pendant un massage" />
@@ -269,9 +266,8 @@ class Chouchoute extends Component {
         <div className='part-bottom' />
 
         <div id='massages' className='row part'>
-          <div className='col-sm-12 part-title'>
-            <h1 className='title title-champagne'>Votre massage<br/><div className='title-deco'/></h1>
-          </div>
+          <Title content='Votre massage' />
+
           <div className='massage-item col-sm-6'>
             <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière !</span> <span class="badge badge-primary">30mn</span> <span class="badge badge-info">35€</span></h2>
             <p className='text text-dark'>Découvrez l’authentique massage du corps indonésien, apaisant, enveloppant et tonique. Il procure une détente profonde.</p>
@@ -343,9 +339,7 @@ class Chouchoute extends Component {
         </div>
 
         <div id='gift-card' className='row part-dark'>
-          <div className='col-sm-12 part-title'>
-            <h2 className='title title-champagne'>Carte cadeau<br/><div className='title-deco'/></h2>
-          </div>
+          <Title content='Carte cadeau' />
 
           <div className='col-sm-5'>
             <img className='img-full img-rounded' src={offer} alt="carte cadeau"  />
@@ -366,9 +360,7 @@ class Chouchoute extends Component {
         </div>
 
         <div id='contact' className='row part' ref='contact'>
-          <div className='col-sm-12 part-title'>
-            <h2 className='title title-champagne'>Contact<br/><div className='title-deco'/></h2>
-          </div>
+          <Title content='Contact' />
 
           <div className='col-sm-4'>
             <p className='text text-semi-dark'>📅 <b className='text-dark'>Horaires</b> mardi-samedi  10:00-19:00</p> 
