@@ -12,12 +12,14 @@ nav {
       vertical-align: top;
       text-decoration: none;
       
-      a {
+      button {
         padding: 5px 8px;
         color: $colorMain;
         font-family: 'champagneregular';
         font-size: 1em;
         text-transform: uppercase;
+        background-color: #FFF;
+        border: none;
 
         &:hover {
           background-image: linear-gradient(153deg, $colorSecond 0%, $colorMain 75%);

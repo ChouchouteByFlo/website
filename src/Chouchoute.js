@@ -50,6 +50,7 @@ class Chouchoute extends Component {
     this.contact = this.contact.bind(this);
     this.offer = this.offer.bind(this);
     this.send = this.send.bind(this);
+    this.scroll = this.scroll.bind(this);
   }
 
 
@@ -170,6 +171,16 @@ class Chouchoute extends Component {
     });
   }
 
+  scroll(to) {
+    console.log(to);
+    let destination = document.getElementById(to);
+
+    scrollIntoView(destination, {
+      block: 'nearest',
+      behavior: 'smooth'
+    });
+  }
+
   render() {
     const settings = {
       className: "slider variable-width",
@@ -191,19 +202,19 @@ class Chouchoute extends Component {
             <nav>
               <ul>
                 <li>
-                  <a href='#chouchoute'>Chouchoute</a>
+                  <button onClick={() => this.scroll('chouchoute')}>Chouchoute</button>
                 </li>
                 <li>
-                  <a href='#by-flo'>By Flo</a>
+                  <button onClick={() => this.scroll('by-flo')}>By Flo</button>
                 </li>
                 <li>
-                  <a href='#massages'>Votre massage</a>
+                  <button onClick={() => this.scroll('massages')}>Votre massage</button>
                 </li>
                 <li>
-                  <a href='#gift-card'>Carte cadeau</a>
+                  <button onClick={() => this.scroll('gift-card')}>Carte cadeau</button>
                 </li>
                 <li>
-                  <a href='#contact'>Me contacter</a>
+                  <button onClick={() => this.scroll('contact')}>Me contacter</button>
                 </li>             
               </ul>
             </nav>
