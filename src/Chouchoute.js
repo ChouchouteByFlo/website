@@ -46,6 +46,7 @@ class Chouchoute extends Component {
     this.handlePhone = this.handlePhone.bind(this);
     this.handleContent = this.handleContent.bind(this);
     this.formattedData = this.formattedData.bind(this);
+    this.toastError = this.toastError.bind(this);
     this.contact = this.contact.bind(this);
     this.offer = this.offer.bind(this);
     this.send = this.send.bind(this);
@@ -93,25 +94,27 @@ class Chouchoute extends Component {
           } else {
             toastr.success('Une erreur est survenu ...')
           }
-          console.log(res);
-          console.log(res.data);
         })
       } else {
         toastr.error('Veuillez entrer une adresse email valide')
       }
     } else {
-      if (!messageContent) {
-        toastr.error('Veuillez entrer un message')
-      }
-      if (!email) {
-        toastr.error('Veuillez entrer une adresse email')
-      }
-      if (!/\S+@\S+\.\S+/.test(email)) {
-        toastr.error('Veuillez entrer une adresse email valide')
-      }
-      if (!name) {
-        toastr.error('Veuillez entrer votre nom et prénom')
-      }
+      this.toastError(messageContent, email, name)
+    }
+  }
+
+  toastError(messageContent, email, name) {
+    if (!messageContent) {
+      toastr.error('Veuillez entrer un message')
+    }
+    if (!email) {
+      toastr.error('Veuillez entrer une adresse email')
+    }
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      toastr.error('Veuillez entrer une adresse email valide')
+    }
+    if (!name) {
+      toastr.error('Veuillez entrer votre nom et prénom')
     }
   }
 
