@@ -1,34 +1,34 @@
 console.log('Hello Webpack !');
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
-import toastr from 'toastr';
-import Slider from 'react-slick';
-import scrollIntoView from 'scroll-into-view-if-needed';
-import Emojoy from './Emojoy';
-import Title from './Title'
-import DurationPriceBadges from './DurationPriceBadges';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import axios from "axios";
+import toastr from "toastr";
+import Slider from "react-slick";
+import scrollIntoView from "scroll-into-view-if-needed";
+import Emojoy from "./Emojoy";
+import Title from "./Title"
+import DurationPriceBadges from "./DurationPriceBadges";
 
-import logo from './assets/images/logo-160.jpg';
-import flo from './assets/images/pro-flo.jpg';
-import imgSourire from './assets/images/sourire.jpg';
-import img1 from './assets/images/sample-1.jpg';
-import img2 from './assets/images/sample-2.jpg';
-import img3 from './assets/images/sample-3.jpg';
-import img4 from './assets/images/sample-4.jpg';
-import img5 from './assets/images/sample-5.jpg';
-import img6 from './assets/images/sample-6.jpg';
-import offer from './assets/images/offer.jpg';
-import './assets/stylesheets/style.scss';
+import logo from "./assets/images/logo-160.jpg";
+import flo from "./assets/images/pro-flo.jpg";
+import imgSourire from "./assets/images/sourire.jpg";
+import img1 from "./assets/images/sample-1.jpg";
+import img2 from "./assets/images/sample-2.jpg";
+import img3 from "./assets/images/sample-3.jpg";
+import img4 from "./assets/images/sample-4.jpg";
+import img5 from "./assets/images/sample-5.jpg";
+import img6 from "./assets/images/sample-6.jpg";
+import offer from "./assets/images/offer.jpg";
+import "./assets/stylesheets/style.scss";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/slick-carousel/slick/slick.css'; 
-import '../node_modules/slick-carousel/slick/slick-theme.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/slick-carousel/slick/slick.css"; 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
-const HOOK_PART_ONE = 'T3X6T9YG5';
-const HOOK_PART_TWO = 'BS4RGLOCK';
-const HOOK_PART_THREE = '6dyhTJ7EMRlUoq6Vu9FSdYhF';
+const HOOK_PART_ONE = "T3X6T9YG5";
+const HOOK_PART_TWO = "BS4RGLOCK";
+const HOOK_PART_THREE = "6dyhTJ7EMRlUoq6Vu9FSdYhF";
 
 class Chouchoute extends Component {
   constructor(props) {
