@@ -8,7 +8,7 @@ import Slider from 'react-slick';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import Emojoy from './Emojoy';
 
-import logo from './assets/images/logo.png';
+import logo from './assets/images/logo-160.jpg';
 import flo from './assets/images/pro-flo.jpg';
 import imgSourire from './assets/images/sourire.jpg';
 import img1 from './assets/images/sample-1.jpg';
