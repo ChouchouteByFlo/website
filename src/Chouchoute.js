@@ -415,6 +415,7 @@ class Chouchoute extends Component {
 }
 
 const yieldNode = document.querySelector('#yield');
+
 ReactDOM.render(
   <Chouchoute />,
   yieldNode

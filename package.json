@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=development",
+    "buildProd": "webpack -p --config ./webpack.production.config.js",
     "watch": "webpack --watch --mode=development",
     "webpack": "webpack-dev-server",
-    "netlify": "npm install && npm run build"
+    "netlify": "npm install && npm run buildProd"
   },
   "author": "Nicolas LE CHENIC",
   "devDependencies": {
@@ -19,15 +20,14 @@
     "babel-loader": "^8.0.6",
     "babel-minify-webpack-plugin": "^0.3.1",
     "bootstrap": "^4.3.1",
+    "compression-webpack-plugin": "^3.1.0",
     "css-loader": "^3.2.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^4.2.0",
     "img-loader": "^3.0.1",
-    "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.9.0",
-    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
