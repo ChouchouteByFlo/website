@@ -7,6 +7,7 @@ import toastr from "toastr";
 import Slider from "react-slick";
 import scrollIntoView from "scroll-into-view-if-needed";
 import Emojoy from "./Emojoy";
+import TopTitle from "./TopTitle";
 import Title from "./Title";
 import DurationPriceBadges from "./DurationPriceBadges";
 
@@ -289,7 +290,7 @@ class Chouchoute extends Component {
         <div className='part-bottom' />
 
         <div id='massages' className='row part'>
-          <Title content='Votre massage' />
+          <TopTitle content='Votre massage' />
 
           <div className='massage-item col-sm-6'>
             <h2 className='title title-sub title-dark'><Emojoy name='wangi' /> Wangi, <span className='text text-small text-champagne'>L'Aventurière !</span> <DurationPriceBadges duration="30" price="35" /></h2>
