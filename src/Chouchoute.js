@@ -1,4 +1,5 @@
-console.log('Hello Webpack !');
+console.log('Hello Webpack !!!');
+console.log(process.env.PLOP)
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
