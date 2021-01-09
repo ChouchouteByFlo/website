@@ -390,6 +390,7 @@ class Chouchoute extends Component {
           <div className='col-sm-4'>
             <p className='text text-semi-dark'>📅 <b className='text-dark'>Horaires</b> Tous les jours de 9:30-17:30 sauf les mercredis et dimanches</p>
             <p className='text text-semi-dark'>📞 <b className='text-dark'>Téléphone</b> +336 52.18.72.92</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42999.55067623435!2d-2.738819!3d47.655828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b66e6986c6242f4!2sChouchoute%20by%20Flo!5e0!3m2!1sfr!2sfr!4v1577725715443!5m2!1sfr!2sfr"></iframe>
           </div>
 
           <div className='col-sm-8'>
