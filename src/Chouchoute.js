@@ -352,7 +352,7 @@ class Chouchoute extends Component {
             <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
             <p className="text text-peps">Effet décoiffant garanti !</p>
             <p className='text text-dark'>Masque au beurre de karité, huile de jojoba et huile de ricin (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
-            <p className='text text-dark'>Massage pratiqué sur fauteuil. Possibilité de déplacement à domicile sur le secteur de Josselin - Ploermel.</p>
+            <p className='text text-dark'>Massage pratiqué sur fauteuil. Possibilité de déplacement à domicile sur le secteur de Josselin - Ploërmel.</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
