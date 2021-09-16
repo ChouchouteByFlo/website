@@ -352,7 +352,7 @@ class Chouchoute extends Component {
             <p className='text text-dark'>Très populaire dans les salons de coiffure à Java et Bali, cet authentique trésor de beauté se focalise sur le cuir chevelu et débute par l’application d’un soin capillaire. Ce massage crânien tonique et relaxant prévient la perte de cheveux. Durant le temps de pose du masque, ce soin revitalisant s’accompagne d’un massage de la nuque, du dos, des bras et des mains.</p>
             <p className="text text-peps">Effet décoiffant garanti !</p>
             <p className='text text-dark'>Masque au beurre de karité, huile de jojoba et huile de ricin (tous les produits sont issus de l’agriculture biologique, 100% purs et naturels).</p>
-            <p className='text text-dark'>Massage pratiqué sur fauteuil. Possibilité de déplacement à domicile sur le secteur de Vannes.</p>
+            <p className='text text-dark'>Massage pratiqué sur fauteuil. Possibilité de déplacement à domicile sur le secteur de Josselin - Ploermel.</p>
             <button 
               className='button-normal'
               onClick={this.contact}  
@@ -390,7 +390,7 @@ class Chouchoute extends Component {
           <div className='col-sm-4'>
             <p className='text text-semi-dark'>📅 <b className='text-dark'>Horaires</b> Tous les jours de 9:30-17:30 sauf les mercredis et dimanches</p>
             <p className='text text-semi-dark'>📞 <b className='text-dark'>Téléphone</b> +336 52.18.72.92</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42999.55067623435!2d-2.738819!3d47.655828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b66e6986c6242f4!2sChouchoute%20by%20Flo!5e0!3m2!1sfr!2sfr!4v1577725715443!5m2!1sfr!2sfr"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113000.12262653657!2d-2.638221624133621!3d47.94937656049811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480fce17bda0ea73%3A0x307cad350f181d40!2s56120%20Josselin!5e0!3m2!1sfr!2sfr!4v1631771705879!5m2!1sfr!2sfr"></iframe>
           </div>
 
           <div className='col-sm-8'>
