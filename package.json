@@ -27,7 +27,7 @@
     "postcss-loader": "^3.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.13.1",
-    "react-router": "^5.0.1",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.0.1",
     "react-slick": "^0.25.2",
     "sass-loader": "^8.0.0",
